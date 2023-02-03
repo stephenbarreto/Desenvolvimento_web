@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header{
+    background-color: blue;
+    width: 100%;
+    padding: 10px;
+}
+
+.logo, .sociais{
+    width: 25%;
+}
+
+.logo img{
+    width: 100px;
+}
+
+.menu{
+    width: 50%;
+}
+
+.menu nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: 18px;
+    position: relative;
+}
+
+.menu nav a::after{
+    content: "";
+    height: 4px;
+    background-image: linear-gradient(45deg, rgb(119, 2, 2), rgb(238, 81, 81));
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.menu nav a:hover::after{
+    width: 30px;
+}
+
+.sociais button{
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(45deg, rgb(119, 2, 2), rgb(238, 81, 81));
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.sociais button i{
+    font: size 20px; 
+    color: white;
+}
