@@ -1,0 +1,133 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url("..//img/fundo.jpg");
+  background-size: cover;
+  font-family: "Raleway";
+}
+
+
+main {
+  flex: 1 0 auto;
+}
+
+#modal {
+  max-height: 90%;
+}
+
+h4,
+.game-title {
+  font-family: "Permanent Marker";
+}
+
+nav {
+  background-color: rgba(8, 212, 110, 0.7);
+  box-shadow: 0 2px 15px 6px #000;
+}
+
+a {
+  margin: 0 5px;
+}
+
+.page-footer {
+  background-color: rgba(8, 212, 110, 0.7);
+}
+
+/* O tabuleiro do jogo é flexível para alinhar as peças do jogo melhor do que o Materialize grid*/
+.gameboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  min-height: 50vh;
+  margin-top: 10%;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Posicionamento para cada heap (linha xom as peças) dentro do tabuleiro */
+.heap-one,
+.heap-two,
+.heap-three {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+/* Estilos para cada peça do jogo em cada heap */
+.item {
+  margin: .5em;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  box-shadow: 5px 10px 18px #000;
+}
+
+.button-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.switch-player,
+.game-mode {
+  border-radius: 10px;
+  background-color: rgba(8, 212, 110, 0.7);
+}
+
+.reminder-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.reminder-msg {
+  padding: 0.25em;
+  border-radius: 0.5em;
+  background-color: rgba(255, 255, 255, 0.7); 
+}
+
+.logo {
+  width: 25px;
+  height: 25px;
+  filter: invert(100%);
+}
+
+.win-msg {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 20px;
+  color: #222;
+  padding: 10px;
+}
+
+.comoJogar {
+  margin: 5%;
+  padding: 5%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 30px;
+}
+
+/* Media query responsividade para ajustar o texto para celular*/
+@media (max-width: 800px) {
+  .item {
+  margin: .1em;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  }
+
+  .win-msg {
+    font-size: 24px;
+  }
+
+  .reminder-msg {
+    font-size: 14px;
+  }
+
+  .switch-player {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jogo Nim</title>
+  <link rel="icon" href="img/icon.jpg" >
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</head>
+<body>
+  <!-- Materialize Modal Framework para criar caixas de dialogo-->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <h4>Jogo Nim</h4>
+      <p>Nim é um jogo de estratégia matemática. Os jogadores se revezam removendo quantos itens quiserem de uma única pilha. O jogador deixado para remover o último item perde!</p>
+      <p>Escolha o modo de Jogo:</p>
+      <button class="btn game-mode two-player">2 Jogadores </button><br><br>
+      <button class="btn game-mode computer">Contra o PC</button><br><br>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect btn-flat">Jogar!</a>
+    </div>
+  </div>
+
+  <!-- Materialize nav bar  -->
+  <nav>
+    <div class="nav-wrapper">
+      <a class="brand-logo center game-title">Jogo Nim</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="reset">Recomeçar</a></li>
+        <li><a href="index.html">Modo de Jogo</a></li>
+        <li><a href="comoJogar.html">Como Jogar</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Materialize nav bar for small devices -->
+  <ul class="sidenav" id="mobile-demo">
+    <li><a class="reset">Recomeçar</a></li>
+    <li><a href="index.html">Modo de Jogo</a></li>
+    <li><a href="comoJogar.html">Como Jogar</a></li>
+  </ul>
+
+  <!-- Divs para conter cada item -->
+  <main class="container">
+    <div class="gameboard">
+      <div class="heap-one" id="heap-one">
+        <div class="item blue-grey lighten-3" id="h1-1"></div>
+        <div class="item blue-grey lighten-3" id="h1-2"></div>
+        <div class="item blue-grey lighten-3" id="h1-3"></div>
+      </div>
+      <div class="heap-two" id="heap-two">
+        <div class="item blue-grey" id="h2-1"></div>
+        <div class="item blue-grey" id="h2-2"></div>
+        <div class="item blue-grey" id="h2-3"></div>
+        <div class="item blue-grey" id="h2-4"></div>
+        <div class="item blue-grey" id="h2-5"></div> 
+      </div>     
+      <div class="heap-three" id="heap-three">
+        <div class="item blue-grey darken-3" id="h3-1"></div>
+        <div class="item blue-grey darken-3" id="h3-2"></div>
+        <div class="item blue-grey darken-3" id="h3-3"></div>
+        <div class="item blue-grey darken-3" id="h3-4"></div>
+        <div class="item blue-grey darken-3" id="h3-5"></div>
+        <div class="item blue-grey darken-3" id="h3-6"></div>
+        <div class="item blue-grey darken-3" id="h3-7"></div>
+      </div>
+    </div>
+
+    <!-- Painel de controle para começar a jogar -->
+    <div class="button-panel">
+      <h5 class="waves-effect waves-light btn-large switch-player flow-text" id="player-one">JOGADOR 1</h5>
+      <h5 class="waves-effect waves-light btn-large disabled switch-player flow-text" id="player-two">jOGADOR 2</h5>
+    </div>
+
+    <!-- Conteiner para aparecer a mensagem de lembrete para o jogador terminar a vez  -->
+    <div class="reminder-container">
+      <h5 class="reminder-msg">Clique no botão do jogador com seu nome para terminar a sua vez.</h5>
+    </div>
+  </main>
+  
+  <!-- Ródape da página  -->
+  <footer class="page-footer">
+        <a class="grey-text text-lighten-4">&copy 2023 IFNMG Stephen Barreto</a>
+        <a class="grey-text text-lighten-4 right" href="https://github.com/stephenbarreto/" target="_blank"><img src="img/github.svg" class="logo responsive-img"></a>
+        <a class="grey-text text-lighten-4 right" href="https://www.linkedin.com/in/stephenbarreto" target="_blank"><img src="img/linkedin.png" class="logo responsive-img"></a>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

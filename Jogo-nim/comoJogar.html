@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jogo Nim</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+</head>
+<body>
+  <!-- Barra de navegação Materialize com links -->
+  <nav>
+    <div class="nav-wrapper">
+      <a class="brand-logo center game-title">Jogom nim</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Voltar para o jogo</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Barra de navegação Materialize para dispositivos pequenos -->
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">Voltar para o jogo</a></li>
+  </ul>
+  <!-- Divs para conter cada item do monte -->
+  <main class="comoJogar flow-text">
+    <h3>Como Jogar</h3>
+    <h5>Nim é um jogo de estratégia matemática!</h5>
+    <p>Existem três pilhas distintas com 3, 5 e 7 itens cada.</p>
+    <p>Em cada turno, você deve remover pelo menos um item de uma pilha. Sua vez é indicada pelo botão destacado com seu nome.</p>
+    <p>Você pode remover quantos itens quiser dessa única pilha. Depois de remover quantos itens desejar, pressione seu nome para trocar de jogador.</p>
+    <p>O jogador que restar com o último item do tabuleiro perde!</p>
+    <h5>Jogando contra o computador...</h5>
+    <p>O jogador do computador implementa um algoritmo para reduzir a soma digital binária (também chamada de soma nim) dos itens a 0 em cada turno, o que garante uma vitória, a menos que você jogue perfeitamente!</p>
+  </main>
+  <!-- Ródape da página  -->
+  <footer class="page-footer">
+    <a class="grey-text text-lighten-4">&copy 2023 IFNMG Stephen Barreto</a>
+    <a class="grey-text text-lighten-4 right" href="https://github.com/stephenbarreto/" target="_blank"><img src="img/github.svg" class="logo responsive-img"></a>
+    <a class="grey-text text-lighten-4 right" href="https://www.linkedin.com/in/stephenbarreto" target="_blank"><img src="img/linkedin.png" class="logo responsive-img"></a>
+</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
